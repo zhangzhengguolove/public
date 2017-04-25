@@ -99,6 +99,6 @@ function getStyle(obj,attr){
 	if(obj.currentStyle){
 		return obj.currentStyle[attr];
 	}else{
-		return obj.getComputedStyle(obj,false)[attr];
+		return window.getComputedStyle(obj,null)[attr];
 	}
 }//over
